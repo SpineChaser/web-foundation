@@ -1,0 +1,143 @@
+:root {
+    --background: #f4f4f4;
+    --card: #ffffff;
+    --text: #222222;
+    --muted: #666666;
+    --border: #d5d5d5;
+    --button: #222222;
+    --button-text: #ffffff;
+}
+
+body.dark {
+    --background: #202124;
+    --card: #303134;
+    --text: #f1f1f1;
+    --muted: #b8b8b8;
+    --border: #555555;
+    --button: #f1f1f1;
+    --button-text: #202124;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    transition: 0.2s;
+}
+
+.container {
+    width: 90%;
+    max-width: 680px;
+    margin: 45px auto;
+}
+
+header {
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(135deg, #00b4db, #0083b0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p,
+.tip,
+footer {
+    color: var(--muted);
+}
+
+.note-card {
+    background-color: var(--card);
+    color: var(--text);
+    box-shadow: 0 2px 4px rgba(50, 49, 49, 0.1);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+textarea {
+    width: 100%;
+    min-height: 220px;
+    padding: 12px;
+    resize: vertical;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.note-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.note-info p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.warning {
+    color: orange !important;
+}
+
+.over {
+    color: red !important;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button);
+    color: var(--button-text);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tip {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 30px;
+}

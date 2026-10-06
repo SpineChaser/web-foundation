@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes - Writing Pad</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>QuickNotes</h1>
+            <p>A simple space for ideas, reminders and thoughts.</p>
+        </header>
+
+        <section class="note-card">
+            <label for="note-text">Write your note</label>
+
+            <textarea
+                id="note-text"
+                placeholder="Start typing here..."
+                rows="10"
+            ></textarea>
+
+            <div class="note-info">
+                <p id="char-count">0 / 200 characters</p>
+                <p id="word-count">0 words</p>
+            </div>
+
+            <div class="buttons">
+                <button id="clear-btn" type="button">Clear note</button>
+                <button id="theme-toggle" type="button">Dark mode</button>
+            </div>
+        </section>
+
+        <p class="tip">Tip: Press Escape to clear your note.</p>
+
+        <footer>
+            <p>QuickNotes &copy; 2026</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
