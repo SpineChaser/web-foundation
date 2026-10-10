@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Finder | Day 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="users.js" defer></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>People<span>Finder.</span></h1>
+        <p class="intro">
+            A little space to discover people, one search at a time.
+        </p>
+    </header>
+
+    <main class="container">
+        <section class="search-panel">
+            <div class="section-heading">
+                <h2>Explore the directory</h2>
+                <p>Load the directory, then search by name.</p>
+            </div>
+
+            <button id="load-users" type="button">
+                Load people
+            </button>
+
+            <label for="filter-input">Find someone</label>
+            <input
+                type="text"
+                id="filter-input"
+                placeholder="Try a name like Leanne..."
+            >
+
+            <p id="status" aria-live="polite">
+                Your directory is waiting to be loaded.
+            </p>
+        </section>
+
+        <section class="results-section">
+            <h2>People in the directory</h2>
+            <ul id="users-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for learning, built one step at a time.</p>
+    </footer>
+</body>
+</html>
