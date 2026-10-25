@@ -1,0 +1,7 @@
+# Reflection
+
+The most difficult concept in this course was designing a system that remains correct when many users act at the same time. It is easy to display a seat as available, but harder to guarantee that two customers cannot buy it simultaneously. I worked through this by connecting the API flow to database transactions, row locks, unique constraints, and idempotency. I also learned that checking availability in the browser is not enough because two requests can arrive almost together.
+
+Based on the feedback from my QuickNotes System Design capstone, I would improve how I check the completeness and organization of my submission. My earlier work needed more attention to the exact file path and to finishing the architecture diagram, component explanations, request flow, and trade-offs. For this assignment, I have used the required `quicknotes-day8/` folder and followed the six-part design framework so each section can be checked clearly. I would also test the Markdown files and review the rendered diagram before submitting.
+
+Next, I want to learn how to build and test a small backend API with a relational database, especially how transactions and concurrent requests work in practice. I would also like to learn more about automated testing, authentication, and deploying an application reliably. These skills would help me move from writing system designs to implementing and testing systems that behave safely under real traffic.
